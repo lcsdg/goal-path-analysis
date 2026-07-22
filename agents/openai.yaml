@@ -1,7 +1,7 @@
 interface:
   display_name: "目标全路径分析"
-  short_description: "反查完整路径，约束先分析、再实施、再验证"
-  default_prompt: "Use $goal-path-analysis 先复述需求和验收标准，找全目标路径与影响面；未获明确授权时只分析，授权实施后按 P/M/T 账本小步修改、review 并输出测试清单。"
+  short_description: "区分改功能、修 bug、新系统，按 P/M/T 控范围"
+  default_prompt: "Use $goal-path-analysis 先判断是已有项目变更、Bug 修复还是从 0 新系统；改功能按六阶段找证据和 P/M/T，修 bug 按五阶段先复现再定根因，新系统按七阶段定 MVP、设计路径、定方案并单点开发验收。"
 policy:
   products:
     - "chatgpt"
